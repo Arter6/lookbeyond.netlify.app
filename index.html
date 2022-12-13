@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="=utf-8">
+    <link rel="shortcut icon" href="assets/images/favicon.png">
+    <title>Lookbeyond</title>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/style_index.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/adapt.css">
+    <script src="https://kit.fontawesome.com/d7e6403e9d.js" crossorigin="anonymous"></script>
+    <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/index.js"></script>
+  </head>
+
+  <body>
+    
+    <header>
+      
+    <div class="site_name">
+      <div>
+        <h1>Look beyond</h1>
+        <img src="/assets/images/favicon.png" alt="">
+      </div>
+    </div>
+
+      <nav class="nav_menu" id="index_nav_menu">
+        <input type="checkbox" name="toggle" id="nav_menu_toggle" class="menu_toggle">
+        <label for="nav_menu_toggle" class="menu_toggle"><p><i class="fa-solid fa-bars"></i>Меню</p></label>
+        <ul>
+          <li><a href="index.html"><i class="fa-solid fa-house"></i><span>Главная</span><div class="nav_menu_underline"></div></a></li>
+          <li><a href="satellites.html"><i class="fa-solid fa-satellite"></i><span>Спутники<i class="fa-solid fa-caret-down"></i></span><div class="nav_menu_underline"></div></a>
+            <ul>
+              <li><a href="satellites.html#definition">Определение</a></li>
+              <li><a href="satellites.html#types">Виды</a></li>
+              <li><a href="satellites.html#images">Изображения</a></li>
+            </ul> 
+          </li>
+          <li><a href="stations.html"><i class="fa-solid fa-user-astronaut"></i><span>Космические станции<i class="fa-solid fa-caret-down"></i></span><div class="nav_menu_underline"></div></a>
+            <ul>
+              <li><a href="stations.html#definition">Определение</a></li>
+              <li><a href="stations.html#layout">Устройство</a></li>
+              <li><a href="stations.html#images">Изображения</a></li>
+            </ul> 
+          </li>
+          <li><a href="rockets.html"><i class="fa-solid fa-rocket"></i><span>Космические ракеты<i class="fa-solid fa-caret-down"></i></span><div class="nav_menu_underline"></div></a>
+            <ul>
+              <li><a href="rockets.html#definition">Определение</a></li>
+              <li><a href="rockets.html#classification">Классификация</a></li>
+              <li><a href="rockets.html#images">Изображения</a></li>
+            </ul>  
+          </li>
+          <li><a href="rovers.html"><i class="fa-solid fa-gear"></i><span>Планетоходы<i class="fa-solid fa-caret-down"></i></span><div class="nav_menu_underline"></div></a>
+            <ul>
+              <li><a href="rovers.html#definition">Определение</a></li>
+              <li><a href="rovers.html#purpose">Назначение</a></li>
+              <li><a href="rovers.html#requirements">Требования</a></li>
+              <li><a href="rovers.html#images">Изображения</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+
+    </header>
+
+    <main>
+
+      <section class="container_intro">
+        <div class="wrapper_intro">
+          <h1>Космос</h1>
+            <video id="video_intro" class="video_intro" autoplay muted loop>
+              <source src="/assets/images/index/Space Travel.mp4" type="video/mp4">
+            </video>
+        </div>
+      </section>
+
+      <div class="between"></div>
+
+      <section class="wrapper_quasar">
+          <video id="video_quasar" class="video_quasar" autoplay muted loop>
+            <source src="/assets/images/index/Quasar.mp4" type="video/mp4">
+          </video>
+          <div class="container">
+            <h1>Что мы о нём знаем?</h1>
+          </div>
+      </section>
+
+      <div class="between"></div>
+
+      <section class="wrapper_nothing">
+        <h1>НИЧЕГО</h1>
+      </section>
+
+      <section class="wrapper_text">
+        <p>
+          <span>М</span>ы действительно почти ничего не знаем о космосе. Все наши знания о нём — это предположения, они основываются на теориях и наблюдениях. И именно последним посвящён этот сайт. До середины предыдущего века люди наблюдали за небом только с Земли, но после запуска первых КЛА стало ясно, что наступил новый этап в изучении космоса. Сначала "Спутник-1", затем "Эксплорер-1", "Ariel 1"...  И вот в 1990 году был запущен легендарный телескоп Hubble. Благодаря ему, учёным удалось сделать множество открытий, даже тех, для исследования которых телескоп изначально не предназначался. Но не только с помощью него учёные получали информацию, были, есть и будут множество других. Подробнее о них и не только вы можете прочитать на этом сайте.
+        </p>
+      </section>
+
+    </main>
+
+    <footer>
+
+      <div class="wrapper_footer">
+        <div class="about_us">
+          <h2>О нас</h2>
+          <div class="footer_underline"></div>
+          <p>Look beyond — сайт, посвящённый теме "Космические летательные аппараты". <br>Является курсовой работой студента группы ИКБО-03-21 Теремязева А.О.</p>
+        </div>
+        <div class="footer_menu">
+          <h2>Quick links</h2>
+          <div class="footer_underline"></div>
+          <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="satellites.html">Спутники</a></li>
+            <li><a href="stations.html">Космические станции</a></li>
+            <li><a href="rockets.html">Космические ракеты</a></li>
+            <li><a href="rovers.html">Планетоходы</a></li>
+          </ul>
+        </div>
+        <div class="contacts">
+          <h2>Контакты</h2>
+          <div class="footer_underline"></div>
+          <address>
+            <ul>
+              <li><a href="tel:79689605426"><i class="fa-solid fa-phone"></i>+7 (968) 960 54 26</a></li>
+              <li><a href="mailto:teremyazev06@gmail.com"><i class="fa-solid fa-envelope"></i>teremyazev06@gmail.com</a></li>
+            </ul>
+          </address>
+          <div class="icons">
+
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+  </body>
+
+</html>
+
+<!-- https://upload.wikimedia.org/wikipedia/ru/thumb/1/1b/Voyager_1_entering_heliosheath_region_-_RUS.jpg/1920px-Voyager_1_entering_heliosheath_region_-_RUS.jpg -->

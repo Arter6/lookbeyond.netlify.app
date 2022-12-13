@@ -1,0 +1,203 @@
+.nav_menu [type="checkbox"]
+{
+    display: none;
+}
+
+.nav_menu label.menu_toggle
+{
+    background-color: black;
+    color: white;
+    display: none;
+    padding: 15px 50px;
+    text-transform: uppercase;
+    font-size: 30px;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.nav_menu label.menu_toggle p
+{
+    position: relative;
+    font-size: 40px;
+}
+
+.nav_menu label.menu_toggle .fa-solid
+{
+    position: absolute;
+    left: -40px;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 800px)
+{
+    .nav_menu
+    {
+        overflow: hidden;
+    }
+
+    .nav_menu ul
+    {
+        display: none;
+    }
+
+    .nav_menu label.menu_toggle
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+    }
+
+    input.menu_toggle:checked + label.menu_toggle
+    {
+        background-color: rgb(210, 211, 254);
+        color: black;
+    }
+
+    label.menu_toggle .fa-solid
+    {
+        line-height: 1.6;
+    }
+
+    input.menu_toggle:checked ~ ul
+    {
+        z-index: 2;
+        width: 100%;
+        /* height: 100%; */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        /* flex-grow: 1; */
+        /* top: 50px; */
+    }
+
+    input.menu_toggle:checked ~ ul .fa-solid
+    {
+        line-height: 1.6;
+        font-size: 30px;
+    }
+
+    input.menu_toggle:checked ~ ul > li
+    {
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    input.menu_toggle:checked ~ ul li a
+    {
+        width: 100%;
+        font-size: 30px;
+        padding: 10px 0;
+        /* color:#fff; */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    input.menu_toggle:checked ~ ul li a .fa-solid,
+    input.menu_toggle:checked ~ ul li a span
+    {
+        display: inline;
+    }
+
+    input.menu_toggle:checked ~ ul li a span
+    {
+        margin-left: 7px;
+    }
+
+    input.menu_toggle:checked ~ ul li a .nav_menu_underline
+    {
+        width: 100wh;
+        margin: 0px -10px 0px -10px;
+        display: none;
+    }
+
+    .nav_menu > ul > li.hovered ul
+    {
+        position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        left: 0;
+        width: 100%;
+    }
+
+    .nav_menu > ul > li.hovered > a
+    {
+        color: red !important;
+    }
+
+    .nav_menu > ul >li:not(.hovered) > a
+    {
+        color: white !important;
+    }
+
+    .nav_menu > ul > li.hovered ul li
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        background-color: black;
+    }
+
+    .nav_menu > ul > li.hovered ul li a
+    {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        color: black;
+        background-color: rgb(175, 136, 247);
+    }
+
+    .nav_menu > ul > li.hovered ul li a:hover
+    {
+        -webkit-transform: none;
+            -ms-transform: none;
+                transform: none;
+        background-color: rgba(166, 166, 166,0.5);
+        color: #fff;
+    }
+
+    .wrapper_footer
+    {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+
+    .about_us,
+    .footer_menu,
+    .contacts
+    {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                align-items: flex-start;
+        width: 100%;
+    }
+}
