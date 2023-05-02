@@ -133,7 +133,7 @@
 .wrapper_nothing h1::before,
 .wrapper_nothing h1::after
 {
-  content: "НИЧЕГО";
+  content: "NOTHING";
   position: absolute;
   top: 0;
   left: 0;
